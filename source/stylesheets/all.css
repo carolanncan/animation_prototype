@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 body {
-  background: #d4d4d4 url("../images/background.png");
   text-align: center;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+}
 
 h1 {
   color: rgba(0, 0, 0, .3);
@@ -31,9 +31,15 @@ h1 {
     .doc a:hover {
       color: #666; }
 
-.welcome {
+.graphic {
+  visibility: hidden;
+}
+
+.animate {
   -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
+  -webkit-animation-duration: .9s;
+  visibility: visible;
+}
 
 @-webkit-keyframes welcome {
   from {
