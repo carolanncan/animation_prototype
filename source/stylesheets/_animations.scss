@@ -1,14 +1,4 @@
-@include keyframes(welcome) {
-  from {
-    @include transform(translateX(50px));
-    opacity: 0;
-  }
-  to {
-    @include transform(translateX(90px));
-    opacity: 1;
-  }
-}
-
-h2 {
-  color: red;
+.animate {
+  @include transform(translateX(90px));
+  @include transition(all, linear .9s);
 }
