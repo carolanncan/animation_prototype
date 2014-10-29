@@ -1,4 +1,9 @@
-.animate {
-  @include transform(translateX(90px));
+.animate-left {
+  @include transform(translateX(50px));
+  @include transition(all, linear .9s);
+}
+
+.animate-right {
+  @include transform(translateX(-50px));
   @include transition(all, linear .9s);
 }
