@@ -1,9 +1,15 @@
-.animate-left {
-  @include transform(translateX(50px));
+.animate {
   @include transition(all, linear .9s);
 }
 
-.animate-right {
-  @include transform(translateX(-50px));
-  @include transition(all, linear .9s);
+.box-left {
+  &.animate {
+    @include transform(translateX(50px));
+  }
+}
+
+.box-right {
+  &.animate {
+    @include transform(translateX(-50px));
+  }
 }
