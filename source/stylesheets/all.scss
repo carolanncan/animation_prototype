@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @import "bourbon";
+@import "animations";
 
 body {
   text-align: center;
@@ -38,26 +39,6 @@ h1 {
 }
 
 .animate {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s;
+  @include animation(welcome .9s);
   visibility: visible;
-}
-
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
 }
